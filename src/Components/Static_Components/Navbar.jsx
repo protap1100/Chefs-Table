@@ -1,4 +1,4 @@
-import svg from '../assets/Vector-1.png'
+import svg from '../../assets/Vector-1.png'
 
 const Navbar = () => {
     return (

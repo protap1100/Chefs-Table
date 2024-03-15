@@ -1,9 +1,9 @@
-import BannerImage from "../assets/Banner.png";
+import BannerImage from "../../assets/Banner.png";
 
 const Banner = () => {
   return (
     <div
-      className="bg-cover bg-center h-[400px]  md:h-[500px] lg:h-[600px]"
+      className="mt-10 bg-cover bg-center h-[400px]  md:h-[500px] lg:h-[600px] rounded-xl"
       style={{ backgroundImage: `url(${BannerImage})` }}
     >
       <div className="text-white flex flex-col justify-center items-center p-4 sm:p-10 md:p-20 lg:p-40">
