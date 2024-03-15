@@ -1,0 +1,100 @@
+[
+    {
+      "recipeImage": "https://example.com/recipe1.jpg",
+      "recipeId": 1,
+      "recipeName": "Grilled Salmon with Lemon Butter Sauce",
+      "shortDescription": "A delicious and healthy grilled salmon dish with a tangy lemon butter sauce.",
+      "ingredients": [
+        "4 salmon fillets",
+        "1/4 cup butter",
+        "2 tablespoons lemon juice",
+        "2 cloves garlic, minced",
+        "2 tablespoons chopped parsley",
+        "Salt and pepper to taste"
+      ],
+      "preparingTime": "25 min",
+      "calories": "350 calories"
+    },
+    {
+      "recipeImage": "https://example.com/recipe2.jpg",
+      "recipeId": 2,
+      "recipeName": "Vegetable Stir-Fry",
+      "shortDescription": "A colorful and nutritious vegetable stir-fry with a savory soy sauce.",
+      "ingredients": [
+        "1 red bell pepper, sliced",
+        "1 yellow bell pepper, sliced",
+        "1 cup broccoli florets",
+        "1 cup sliced mushrooms",
+        "2 tablespoons soy sauce",
+        "2 tablespoons vegetable oil"
+      ],
+      "preparingTime": "20 min",
+      "calories": "180 calories"
+    },
+    {
+      "recipeImage": "https://example.com/recipe3.jpg",
+      "recipeId": 3,
+      "recipeName": "Classic Beef Lasagna",
+      "shortDescription": "A hearty and comforting lasagna with layers of beef, cheese, and tomato sauce.",
+      "ingredients": [
+        "1 lb ground beef",
+        "1 jar (24 oz) tomato sauce",
+        "1 box lasagna noodles",
+        "2 cups ricotta cheese",
+        "1 cup shredded mozzarella cheese",
+        "1/2 cup grated Parmesan cheese"
+      ],
+      "preparingTime": "60 min",
+      "calories": "450 calories"
+    },
+    {
+      "recipeImage": "https://example.com/recipe4.jpg",
+      "recipeId": 4,
+      "recipeName": "Lemon Chicken Piccata",
+      "shortDescription": "A classic Italian dish with chicken breasts in a tangy lemon-butter sauce.",
+      "ingredients": [
+        "4 boneless, skinless chicken breasts",
+        "1/4 cup all-purpose flour",
+        "2 tablespoons butter",
+        "2 tablespoons olive oil",
+        "1/2 cup chicken broth",
+        "1/4 cup lemon juice",
+        "2 tablespoons capers"
+      ],
+      "preparingTime": "35 min",
+      "calories": "320 calories"
+    },
+    {
+      "recipeImage": "https://example.com/recipe5.jpg",
+      "recipeId": 5,
+      "recipeName": "Vegetarian Chili",
+      "shortDescription": "A hearty and flavorful vegetarian chili packed with beans, veggies, and spices.",
+      "ingredients": [
+        "1 can (15 oz) black beans, drained and rinsed",
+        "1 can (15 oz) kidney beans, drained and rinsed",
+        "1 can (14.5 oz) diced tomatoes",
+        "1 onion, diced",
+        "2 cloves garlic, minced",
+        "2 tablespoons chili powder",
+        "1 teaspoon cumin"
+      ],
+      "preparingTime": "45 min",
+      "calories": "280 calories"
+    },
+    {
+      "recipeImage": "https://example.com/recipe6.jpg",
+      "recipeId": 6,
+      "recipeName": "Spinach and Feta Stuffed Chicken Breasts",
+      "shortDescription": "Juicy chicken breasts stuffed with a flavorful spinach and feta cheese filling.",
+      "ingredients": [
+        "4 boneless, skinless chicken breasts",
+        "1 cup fresh spinach, chopped",
+        "1/2 cup crumbled feta cheese",
+        "2 cloves garlic, minced",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "preparingTime": "40 min",
+      "calories": "380 calories"
+    }
+   ]
