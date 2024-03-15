@@ -1,4 +1,4 @@
-const FoodSection = ({food}) => {
+const FoodSection = ({food,handleCook}) => {
 
     const {recipeImage,recipeName,shortDescription,preparingTime,calories,ingredients} = food;
     
@@ -50,7 +50,7 @@ const FoodSection = ({food}) => {
                                 </div>
                         </div>
                     </div>
-                    <button className="mt-5 btn rounded-3xl bg-[#0BE58A]" >Want to Cook</button>
+                    <button className="mt-5 btn rounded-3xl bg-[#0BE58A]" onClick={()=>{handleCook(food)}} >Want to Cook</button>
                 </div>
             </div>
         </div>
