@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar"
 function App() {
 
       return (
-        <div>
+        <div className="container mx-auto">
           <Navbar></Navbar>
           <Banner></Banner>
         </div>
