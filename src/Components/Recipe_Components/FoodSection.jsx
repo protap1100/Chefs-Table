@@ -1,20 +1,22 @@
-import FoodImage from "../../assets/Food-1.png"
-const FoodSection = () => {
+const FoodSection = ({food}) => {
+
+    const {recipeImage,recipeName,shortDescription,preparingTime,calories,ingredients} = food;
+    
     return (
-        <div className="p-4 grid grid-cols-2 gap-10">
+        <div>
             {/* Product 1  */}
             <div className="text-xl border border-gray-300 rounded-2xl grid items-center justify-center">
                 <div className="p-4 shadow-xl">
-                        <img src={FoodImage} alt="" />
+                        <img src={recipeImage} alt="" />
                     <div className="mt-5">
-                        <h1 className="font-bold text-2xl">Spaghetti Bolognese</h1>
-                        <h1 className="mt-5 " >Classic Italian pasta dish with <br></br> savory meat sauce</h1>
+                        <h1 className="font-bold text-2xl">{recipeName}</h1>
+                        <h1 className="mt-5 " >{shortDescription}</h1>
                     </div>
-                        <h1 className="mt-10 font-bold text-2xl ">Ingredients</h1>
+                        <h1 className="mt-10 font-bold text-2xl ">Ingredients:{ingredients.length}</h1>
                         <ul className="list-disc mt-5 pl-10">
-                            <li>500g ground beef</li>
-                            <li>1 onion, chopped</li>
-                            <li>2 cloves garlic, minced</li>
+                            {
+                                ingredients.map((ingredient,index)=> (<li key={index}>{ingredient}</li>))
+                            }
                         </ul>
                     <div className="flex mt-10 gap-5">
                         <div className="flex items-center gap-2">
@@ -29,7 +31,7 @@ const FoodSection = () => {
                                 </svg>
                             </div>
                             <div className="font-bold">
-                                30 Minutes
+                                {preparingTime}
                             </div>
                         </div>
                         <div className="flex items-center gap-2">
@@ -44,12 +46,11 @@ const FoodSection = () => {
                                 </svg>
                                 </div>
                                 <div className="font-bold">
-                                     600 Calories
+                                     {calories}
                                 </div>
                         </div>
                     </div>
                     <button className="mt-5 btn rounded-3xl bg-[#0BE58A]" >Want to Cook</button>
-
                 </div>
             </div>
         </div>
