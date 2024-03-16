@@ -15,7 +15,7 @@ const CurrentlyCooking = ({ handleCooking }) => {
                 <table className="w-full">
                     <thead>
                         <tr>
-                            <th className="py-2 px-4  text-left">#</th>
+                            <th className="py-2 px-4  text-left">Id</th>
                             <th className="py-2 px-4  text-left">Name</th>
                             <th className="py-2 px-4  text-left">Time</th>
                             <th className="py-2 px-4  text-left">Calories</th>

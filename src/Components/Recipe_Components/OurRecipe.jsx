@@ -46,7 +46,7 @@ const OurRecipe = () => {
                     </div>
                 </div>
                 <div className="col-span-4" >
-                    <WantToCook cooks={cooks}></WantToCook>
+                    <WantToCook cooks={cooks} setCooks={setCooks}></WantToCook>
                 </div>
             </div>
             {/* <Toast message={toastMessage} />  */}

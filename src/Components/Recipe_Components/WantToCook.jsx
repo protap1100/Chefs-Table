@@ -1,13 +1,16 @@
 import { useState } from 'react';
 import CurrentlyCooking from "./CurrentlyCooking";
 
-const WantToCook = ({ cooks }) => {
+const WantToCook = ({ cooks, setCooks }) => {
     const [curCooking, setCurCooking] = useState([]);
 
     const handleCooking = (recipe) => {
+        const newCooks = cooks.filter((cook) => cook !== recipe);
+
         const newCurCooking = [...curCooking, recipe];
+
+        setCooks(newCooks);
         setCurCooking(newCurCooking);
-        console.log(newCurCooking);
     };
 
     return (
@@ -18,7 +21,7 @@ const WantToCook = ({ cooks }) => {
                 <table className="w-full">
                     <thead>
                         <tr>
-                            <th className="py-2 px-4 text-left">#</th>
+                            <th className="py-2 px-4 text-left">Id</th>
                             <th className="py-2 px-4 text-left">Name</th>
                             <th className="py-2 px-4 text-left">Time</th>
                             <th className="py-2 px-4 text-left">Calories</th>
