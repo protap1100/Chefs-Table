@@ -1,5 +1,5 @@
 const CurrentlyCooking = ({ handleCooking }) => {
-
+    // console.log(handleCooking)
     let totalPreparingTime = 0;
     let totalCalories = 0;
 
