@@ -1,4 +1,5 @@
 const CurrentlyCooking = ({ handleCooking }) => {
+
     let totalPreparingTime = 0;
     let totalCalories = 0;
 

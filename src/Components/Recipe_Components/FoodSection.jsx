@@ -1,13 +1,13 @@
 const FoodSection = ({food,handleCook}) => {
-
+    // console.log(food)
     const {recipeImage,recipeName,shortDescription,preparingTime,calories,ingredients} = food;
     
     return (
         <div>
-            {/* Product 1  */}
+            {/* Product*/}
             <div className="text-xl border border-gray-300 rounded-2xl grid items-center justify-center">
                 <div className="p-4 shadow-xl">
-                        <img src={recipeImage} alt="" />
+                        <img src={recipeImage} alt="" className="w-[440px] rounded-xl h-60" />
                     <div className="mt-5">
                         <h1 className="font-bold text-2xl">{recipeName}</h1>
                         <h1 className="mt-5 " >{shortDescription}</h1>
@@ -50,7 +50,7 @@ const FoodSection = ({food,handleCook}) => {
                                 </div>
                         </div>
                     </div>
-                    <button className="mt-5 btn rounded-3xl bg-[#0BE58A]" onClick={()=>{handleCook(food)}} >Want to Cook</button>
+                    <button className="mt-5 btn rounded-3xl font-bold bg-[#0BE58A]" onClick={()=>{handleCook(food)}} >Want to Cook</button>
                 </div>
             </div>
         </div>

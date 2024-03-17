@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import FoodSection from './FoodSection';
 import WantToCook from './WantToCook';
-// import Toast from './Toast'; 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const OurRecipe = () => {
     const [foods, setFoods] = useState([]);
     const [cooks, setCooks] = useState([]);
-    // const [toastMessage, setToastMessage] = useState('');
 
     useEffect(() => {
         fetch('recipe.json')
@@ -17,14 +17,20 @@ const OurRecipe = () => {
     const handleCook = (food) => {
         const existingCook = cooks.find(cook => cook.recipeId === food.recipeId);
         if (existingCook) {
-            // setToastMessage("This item is already selected.");
-             alert('Hiii')
-            return; 
+            toast.error('You have already cooked this recipe!', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+            return;
         }
 
         const newCooks = [...cooks, food];
         setCooks(newCooks);
-        // setToastMessage("Item added to cooks.");
     }
 
     return (
@@ -32,8 +38,7 @@ const OurRecipe = () => {
             <div className="mt-10 text-center px-4 lg:px-40 grid gap-5">
                 <h1 className="text-4xl font-bold">Our Recipes </h1>
                 <h1>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quidem perferendis sequi maxime
-                    molestias aliquam rerum ut quod unde nulla tempore officia expedita, eligendi, animi molestiae illo aperiam nobis facilis.
+                    Discover culinary delights with Our Recipes ! From classic comfort foods to exotic cuisines, we offer a diverse collection to tantalize your taste buds. Explore, create, and savor unforgettable dishes with our easy-to-follow instructions. Let your culinary journey begin
                 </h1>
             </div>
 
@@ -49,7 +54,7 @@ const OurRecipe = () => {
                     <WantToCook cooks={cooks} setCooks={setCooks}></WantToCook>
                 </div>
             </div>
-            {/* <Toast message={toastMessage} />  */}
+            <ToastContainer />
         </div>
     );
 };

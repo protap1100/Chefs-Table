@@ -1,6 +1,6 @@
 [
     {
-      "recipeImage": "../src/assets/Food-1.png",
+      "recipeImage": "https://i.ibb.co/M9mY621/Food-1.png",
       "recipeId": 1,
       "recipeName": "Grilled Salmon with Lemon Butter Sauce",
       "shortDescription": "A delicious and healthy grilled salmon dish with a tangy lemon butter sauce.",
@@ -16,7 +16,7 @@
       "calories": "350 calories"
     },
     {
-      "recipeImage": "../src/assets/Food-1.png",
+      "recipeImage": "https://i.ibb.co/hZb8q1D/food2.jpg",
       "recipeId": 2,
       "recipeName": "Vegetable Stir-Fry vegetable stir with a savory soy sauce",
       "shortDescription": "A colorful and nutritious vegetable stir-fry with a savory soy sauce.",
@@ -32,7 +32,7 @@
       "calories": "180 calories"
     },
     {
-      "recipeImage": "../src/assets/Food-1.png",
+      "recipeImage": "https://i.ibb.co/hZb8q1D/food2.jpg",
       "recipeId": 3,
       "recipeName": "Classic Beef Lasagna",
       "shortDescription": "A hearty and comforting lasagna with layers of beef, cheese, and tomato sauce.",
@@ -48,7 +48,7 @@
       "calories": "450 calories"
     },
     {
-      "recipeImage": "../src/assets/Food-1.png",
+      "recipeImage": "https://i.ibb.co/VNDS4wL/food-4.jpg",
       "recipeId": 4,
       "recipeName": "Lemon Chicken Piccata",
       "shortDescription": "A classic Italian dish with chicken breasts in a tangy lemon-butter sauce.",
@@ -58,14 +58,13 @@
         "2 tablespoons butter",
         "2 tablespoons olive oil",
         "1/2 cup chicken broth",
-        "1/4 cup lemon juice",
-        "2 tablespoons capers"
+        "1/4 cup lemon juice"
       ],
       "preparingTime": "35 min",
       "calories": "320 calories"
     },
     {
-      "recipeImage": "../src/assets/Food-1.png",
+      "recipeImage": "https://i.ibb.co/xD7Vpzx/Food-5.webp",
       "recipeId": 5,
       "recipeName": "Vegetarian Chili With Extra Potato and Extra Masala",
       "shortDescription": "A hearty and flavorful vegetarian chili packed with beans, veggies, and spices.",
@@ -75,14 +74,13 @@
         "1 can (14.5 oz) diced tomatoes",
         "1 onion, diced",
         "2 cloves garlic, minced",
-        "2 tablespoons chili powder",
         "1 teaspoon cumin"
       ],
       "preparingTime": "45 min",
       "calories": "280 calories"
     },
     {
-      "recipeImage": "../src/assets/Food-1.png",
+      "recipeImage": "https://i.ibb.co/Lx3WtH4/Food-6.jpg",
       "recipeId": 6,
       "recipeName": "Spinach and Feta Stuffed Chicken Breasts",
       "shortDescription": "Juicy chicken breasts stuffed with a flavorful spinach and feta cheese filling.",

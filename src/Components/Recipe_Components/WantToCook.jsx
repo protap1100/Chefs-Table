@@ -3,7 +3,6 @@ import CurrentlyCooking from "./CurrentlyCooking";
 
 const WantToCook = ({ cooks, setCooks }) => {
     const [curCooking, setCurCooking] = useState([]);
-
     const handleCooking = (recipe) => {
         const newCooks = cooks.filter((cook) => cook !== recipe);
 
@@ -12,6 +11,8 @@ const WantToCook = ({ cooks, setCooks }) => {
         setCooks(newCooks);
         setCurCooking(newCurCooking);
     };
+
+    console.log(cooks);
 
     return (
         <div className="border-2 rounded-2xl p-4">
@@ -29,14 +30,14 @@ const WantToCook = ({ cooks, setCooks }) => {
                         </tr>
                     </thead>
                     <tbody>
-                        {cooks.map(({ recipeName, preparingTime, calories }, index) => (
+                        {cooks.map((cook,index) => (
                             <tr key={index} className="bg-gray-200 mt-5">
                                 <td className="py-2 px-4 border-b">{index + 1}</td>
-                                <td className="py-2 px-4 border-b">{recipeName}</td>
-                                <td className="py-2 px-4 border-b">{preparingTime}</td>
-                                <td className="py-2 px-4 border-b">{calories}</td>
+                                <td className="py-2 px-4 border-b">{cook.recipeName}</td>
+                                <td className="py-2 px-4 border-b">{cook.preparingTime}</td>
+                                <td className="py-2 px-4 border-b">{cook.calories}</td>
                                 <td className="py-2 px-4 border-b">
-                                    <button className="bg-green-500 text-white px-4 py-2 rounded-md" onClick={() => handleCooking(cooks[index])}>
+                                    <button className="bg-green-500 font-bold text-white px-4 py-2 rounded-md" onClick={() => handleCooking(cooks[index])}>
                                         Preparing
                                     </button>
                                 </td>
