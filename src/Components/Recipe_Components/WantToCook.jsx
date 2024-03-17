@@ -12,7 +12,7 @@ const WantToCook = ({ cooks, setCooks }) => {
         setCurCooking(newCurCooking);
     };
 
-    console.log(cooks);
+    // console.log(cooks);
 
     return (
         <div className="border-2 rounded-2xl p-4">
