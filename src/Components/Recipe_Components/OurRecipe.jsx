@@ -43,14 +43,14 @@ const OurRecipe = () => {
             </div>
 
             <div className=" mt-10 flex flex-col lg:grid grid-cols-12 gap-5">
-                <div className="col-span-8">
+                <div className="col-span-7">
                     <div className=" grid grid-cols-1 lg:grid-cols-2 gap-10">
                         {foods.map(food => (
                             <FoodSection key={food.recipeId} food={food} handleCook={handleCook}></FoodSection>
                         ))}
                     </div>
                 </div>
-                <div className="col-span-4" >
+                <div className="col-span-5" >
                     <WantToCook cooks={cooks} setCooks={setCooks}></WantToCook>
                 </div>
             </div>

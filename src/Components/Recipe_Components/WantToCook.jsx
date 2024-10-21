@@ -18,7 +18,7 @@ const WantToCook = ({ cooks, setCooks }) => {
         <div className="border-2 rounded-2xl p-4">
             <div className="bg-white shadow-md rounded-lg p-4">
                 <h2 className="text-xl font-bold mb-4 text-center">Want to cook: {cooks.length}</h2>
-                <div className="border border-gray-400"></div>
+                <div className="border"></div>
                 <table className="w-full">
                     <thead>
                         <tr>
@@ -26,12 +26,12 @@ const WantToCook = ({ cooks, setCooks }) => {
                             <th className="py-2 px-4 text-left">Name</th>
                             <th className="py-2 px-4 text-left">Time</th>
                             <th className="py-2 px-4 text-left">Calories</th>
-                            <th className="py-2 px-4"></th>
+                            <th className="py-2 px-4 text-left">Time</th>
                         </tr>
                     </thead>
                     <tbody>
                         {cooks.map((cook,index) => (
-                            <tr key={index} className="bg-gray-200 mt-5">
+                            <tr key={index} className="bg-gray-300">
                                 <td className="py-2 px-4 border-b">{index + 1}</td>
                                 <td className="py-2 px-4 border-b">{cook.recipeName}</td>
                                 <td className="py-2 px-4 border-b">{cook.preparingTime}</td>
@@ -46,7 +46,7 @@ const WantToCook = ({ cooks, setCooks }) => {
                     </tbody>
                 </table>
             </div>
-            <div>
+            <div className='mt-5'>
                 <CurrentlyCooking handleCooking={curCooking} />
             </div>
         </div>
